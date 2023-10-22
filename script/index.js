@@ -34,12 +34,7 @@ const createQuestion = (max, length) => {
     }
     usedNumbers.add(number)
 
-    let method
-    if (i === 0) {
-      method = 1 // 第一个运算符为加法
-    } else {
-      method = Math.floor(Math.random() * 2) + 1
-    }
+    let method = Math.floor(Math.random() * 2) + 1
     dataArr.push({ number: number, method: method })
   }
 
