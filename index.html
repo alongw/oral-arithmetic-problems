@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>口算题生成器</title>
+    <link rel="stylesheet/less" type="text/css" href="./style/index.less" />
+    <script src="./script/md5.js"></script>
+    <script src="./script/tool.js"></script>
+  </head>
+  <body>
+    <div class="setting">
+      <h1>口算题生成器</h1>
+      <form>
+        最大值 <input type="number" id="max" /> 算式长度
+        <input type="number" id="length" value="2" /> 生成个数
+        <input type="number" id="number" value="120" />
+        <button type="button" onclick="start()">生成</button>
+      </form>
+    </div>
+    <div class="control">
+      <button onclick="showanswer()">切换答案</button>
+      <button onclick="start()">重新生成</button>
+      <button onclick="print()">打印</button>
+    </div>
+    <ul>
+      <!-- <li>80 + 60 = 140</li> -->
+    </ul>
+    <script src="./script/less@4.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
